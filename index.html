@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&J Marketing | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>A&J Marketing</h1>
+                <h2>"Your Vision, Our Design - Marketing That Works!"</h2>
+                <img src="images/A&J NO BG LOGO (2).png" alt="A&J Marketing Logo">
+            </div>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1>Creative Ads & Websites That Grow Your Business</h1>
+        <p><b>We design stunning ads and websites to help your brand stand out.</b></p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At A&J Marketing, we specialize in designing eye-catching ads and high-performance websites for local businesses.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul class="services-list">
+            <li>Website Design & Development</li>
+            <li>Social Media Ad Design</li>
+            <li>SEO Optimization</li>
+            <li>Branding & Logo Design</li>
+        </ul>
+    </section>
+    
+    <section id="order">
+        <h2>Select Your Service</h2>
+        <form action="https://formspree.io/f/manqbvgr" method="POST" class="order-form">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="Name" placeholder="Enter your full name" required>
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" required>
+            <input type="email" name="email" placeholder="Enter Email" required>
+    
+            <label for="menu-item">Select Service:</label>
+            <select id="menu-item" name="service" required>
+                <option value="website">Website Design - From R500</option>
+                <option value="ads">Social Media Ads - From R150</option>
+                <option value="seo">SEO Optimization - R200</option>
+                <option value="branding">Branding & Logo Design - R250</option>
+            </select>
+            
+            <label for="message">Additional Message or Inquiry</label>
+            <textarea id="message" name="message" rows="4" placeholder="Additional Details"></textarea>
+            <button type="submit">Submit Order</button>
+        </form>
+        <p id="form-success" style="display: none; color: green;">Thank you! Your order has been submitted.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: +27 60 240 1944</p>
+        <p>Email: Austinprinsloo32@gmail.com</p>
+        <p>Address: Port Elizabeth Surrounding Areas</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61572828975035" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
+            <a href="https://wa.me/+27602401944" target="_blank"><i class="fab fa-whatsapp"></i>WhatsAPP</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 A&J Marketing. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
