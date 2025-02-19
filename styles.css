@@ -1,16 +1,20 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', 'Poppins', sans-serif;
     margin: 0;
     padding: 1;
     background: #807a47; /* Page background color */
     color: #000000;
+    font-size: 16px; /* Ensure a base font size */
+    line-height: 1.6; /* Improve line spacing */
+    -webkit-font-smoothing: antialiased; /* Improve font rendering on WebKit browsers */
+    -moz-osx-font-smoothing: grayscale; /* Improve font rendering on Firefox */
 }
 
 header {
     background: #333;
     color: #fff;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', 'Poppins', sans-serif; /* Consistent font family */
     padding: 20px;
     text-align: center;
     margin: 1rem;
@@ -38,8 +42,7 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  
+}
 
 /* Logo Centering in Mobile View */
 .logo {
@@ -86,7 +89,6 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 .portfolio-item img, .portfolio-item video {
     width: 100%;
@@ -159,4 +161,35 @@ footer {
     .portfolio-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller grid for mobile */
     }
+}
+
+.get-started-btn {
+    background-color: #007BFF; /* Example color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Adjust for desired roundness */
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; /* Ensure no underline */
+    display: inline-block; /* Ensures padding and other properties work correctly */
+}
+
+.get-started-btn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.footer-link {
+    color: #007BFF; /* Example color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px;
+    border-radius: 15px; /* Adjust for desired roundness */
+    margin: 0 5px;
+    font-size: 14px;
+    display: inline-block; /* Ensures padding and other properties work correctly */
+}
+
+.footer-link:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+    text-decoration: none; /* Ensure no underline on hover */
 }
